@@ -1,0 +1,44 @@
+.flex {
+  .field {
+    display: flex;
+    flex-wrap: wrap;
+  
+    .field-label {
+      display: flex;
+    }
+  
+    .field-value {
+      display: flex;
+    }
+  }
+  
+  .fields {
+    display: flex;
+  }
+
+  .horizontal {
+    flex-flow: row wrap;
+  }
+
+  .vertical {
+    flex-flow: column;
+  }
+
+  .align-center {
+    &.field,
+    &.fields,
+    .field-label,
+    .field-value {
+      justify-content: center;
+    }
+  }
+
+  .align-right {
+    &.field,
+    &.fields,
+    .field-label,
+    .field-value {
+      justify-content: flex-end;
+    }
+  }
+}
